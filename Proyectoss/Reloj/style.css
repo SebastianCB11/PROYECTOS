@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;  /* Fondo negro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;  /* Color de texto blanco */
+}
+
+.clock-container {
+    text-align: center;
+}
+
+.clock-face {
+    position: relative;
+    width: 400px;  /* Aumentamos el tamaño del círculo */
+    height: 400px;  /* Aumentamos el tamaño del círculo */
+    border-radius: 50%;
+    background-color: #333;  /* Fondo del reloj en gris oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.time {
+    font-size: 100px;  /* Aumentamos el tamaño de la fuente */
+    font-weight: bold;
+    color: #fff;  /* Números del reloj en blanco */
+}
+
+.period {
+    font-size: 30px;  /* Aumentamos el tamaño de AM/PM */
+    color: #fff;
+    position: absolute;
+    bottom: 10px;  /* Ajustamos la posición de AM/PM */
+    right: 10px;  /* Ajustamos la posición de AM/PM */
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 12px;  /* Esquinas curvas */
+    border: 1px solid #4CAF50;  /* Borde verde */
+    background-color: #A5D6A7;  /* Fondo verde claro */
+    color: #333;  /* Texto en color oscuro */
+    cursor: pointer;
+}
+
+select:focus {
+    outline: none;
+    border-color: #388E3C;  /* Borde más oscuro cuando está seleccionado */
+}
+
+h2 {
+    color: #fff;  /* Color del título de hora mundial en blanco */
+}

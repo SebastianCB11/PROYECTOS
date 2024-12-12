@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital Circular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock-face">
+            <div class="time" id="clock-time"></div>
+            <div class="period" id="clock-period"></div>
+        </div>
+        <div class="world-time">
+            <h2>Hora Mundial</h2>
+            <select id="city-selector">
+                <option value="America/New_York">Nueva York</option>
+                <option value="Europe/London">Londres</option>
+                <option value="Asia/Tokyo">Tokio</option>
+                <option value="Australia/Sydney">Sídney</option>
+                <option value="Europe/Paris">París</option>
+                <option value="America/Los_Angeles">Los Ángeles</option>
+            </select>
+            <div id="world-time" class="time"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
